@@ -1,87 +1,96 @@
 # Agenda de Trabalho
 
-## Integrantes Locais :
+## Integrantes Locais
 
 Matheus da Silva da Cruz
 
 David J. A. Silva
 
-## Índice
+Índice
 
-## Descrição do Projeto
+Descrição do Projeto
 
-Tecnologias Utilizadas
+Emblemas
 
-Funcionalidades Implementadas
+Tecnologias Empregadas
+
+Funcionalidades Disponíveis
 
 Estrutura do Banco de Dados
 
- Contatos
+Contatos
 
-## Descrição do Projeto
+Descrição do Projeto
 
-Este projeto é um sistema de gerenciamento de tarefas que permite aos usuários:
+Este projeto consiste em um sistema para gerenciamento de tarefas que possibilita aos usuários pesquisar, criar, editar, excluir e visualizar suas atividades. O objetivo é oferecer uma ferramenta intuitiva e 
 
-Pesquisar
-Criar
-Editar
-Excluir
-Visualizar tarefas
-O objetivo é fornecer uma ferramenta simples e eficiente para a organização e acompanhamento de atividades diárias . O sistema conta com uma interface gráfica para o gerenciamento de usuários e clientes , utilizando MySQL para o armazenamento de dados.
+eficaz para organizar e gerenciar tarefas diárias, utilizando uma interface gráfica para o gerenciamento de usuários e clientes. Os dados são armazenados em um banco de dados MySQL, acessível através do MySQL 
+Workbench.
 
-## Tecnologias Utilizadas
-Linguagem : Java
+No Banco de Dados:
 
-Interface gráfica : Swing, JavaFX
+A tabela Usuários armazenados: id, nome, email, nome_usuario, senha.
 
-Banco de Dados : MySQL
+A tabela Clientes contém: id, nome, endereço, telefone, email, cpf_cnpj.
 
-Ferramenta de gerenciamento : MySQL Workbench
+A tabela Agenda possui: id, data, hora, descrição, cliente_id (chave estrangeira).
 
-Conexão com o Banco de Dados : JDBC
+Emblemas
 
-Funcionalidades Implementadas
+Os emblemas em Markdown são elementos gráficos utilizados em arquivos Markdown para apresentar informações, status ou links de forma visualmente atraente e facilmente compreensível. Eles são frequentemente usados
+​​
+em repositórios de código, especialmente no GitHub, para fornecer informações rápidas e relevantes, como status de construção, cobertura de testes, versões de software, licenças, entre outros.
+
+Tecnologias Empregadas
+
+Linguagem de Programação: Java (Swing: bibliotecas | JavaFX: Interface Gráfica).
+
+Banco de Dados: MySQL.
+
+Ferramenta de Gerenciamento de Banco de Dados: MySQL Workbench.
+
+Conexão com o Banco de Dados: JDBC (Java Database Connectivity).
+
+Funcionalidades Disponíveis
 
 Tela de Login
 
-Autenticação com nome de usuário e senha.
+Campos: nome de usuário e senha.
 
-Exibe erro se as credenciais forem incorretas.
+Descrição: Permite que usuários cadastrados façam login no sistema. Em caso de erro, uma mensagem informativa será exibida.
 
 Tela Principal
 
-Menu com opções: Cadastro de Usuários , Cadastro de Clientes e Agenda .
-
+Descrição: Um menu que oferece opções como Cadastro, Relatório, Ajuda e Configurações. As principais funcionalidades estão na seção de Cadastro, que inclui: Cadastro de Usuários, Cadastro de Clientes e Agenda.
 Tela de Cadastro de Usuários
 
-Campos : nome, e-mail, nome de usuário e senha.
+Campos: nome, e-mail, nome de usuário e senha.
 
-Funcionalidades: pesquisa , adição , edição e exclusão de usuários , com validações para evitar duplicações.
-
+Descrição: Formulário que permite pesquisar, limpar, inserir, editar e excluir usuários do sistema, com validação para evitar duplicação de dados.
 Tela de Cadastro de Clientes
 
-Campos : nome, endereço, telefone, e-mail e CPF/CNPJ.
+Campos: nome, endereço, telefone, e-mail e CPF/CNPJ.
 
-Funcionalidades: gerenciamento de clientes .
+Descrição: Formulário que possibilita pesquisar, limpar, inserir, editar e excluir clientes do sistema.
 
 Agenda para Registro de Compromissos
 
-Campos : dados, hora, descrição e cliente associado.
+Campos: dados, horário, descrição e cliente associado.
 
-Exibe compromissos em tabela com visualização por dia , semana ou mês .
+Descrição: Formulário que permite registrar compromissos ou eventos, exibindo-os em uma tabela com opções de visualização por dia, semana ou mês.
 
 Estrutura do Banco de Dados
 
-## Tabelas :
+Tabelas
 
-Usuários : id, nome, email, nome_usuario, senha
+Usuários: id, nome, email, nome_usuario, senha.
 
-Clientes : id, nome, endereço, telefone, email, cpf_cnpj
+Clientes: id, nome, endereço, telefone, email, cpf_cnpj.
 
-Ordem do Dia : id, data, hora, descrição, cliente_id (chave estrangeira)
+Agenda: id, data, hora, descrição, cliente_id (chave estrangeira).
 
-## Contatos
+Contatos
 
-Matheus da Silva da Cruz : motogmatheus362@gmail.com
+Matheus da Silva da Cruz: motogmatheus362@gmail.com
 
-David JA Silva : (inserir e-mail aqui)
+David JA Silva: (inserir e-mail aqui)
