@@ -84,8 +84,9 @@ Clientes: id, nome, endereço, telefone, email, cpf_cnpj.
 Agenda: id, data, hora, descrição, cliente_id (chave estrangeira).
 
 ## Contatos
+![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
 Matheus da Silva da Cruz: motogmatheus362@gmail.com
 
 David JA Silva: davidsx999@gmail.com
 
-![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
+
