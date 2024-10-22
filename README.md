@@ -86,4 +86,4 @@ Agenda: id, data, hora, descrição, cliente_id (chave estrangeira).
 ## Contatos
 Matheus da Silva da Cruz: motogmatheus362@gmail.com
 
-David JA Silva: 
+David JA Silva: davidsx999@gmail.com
