@@ -1,5 +1,5 @@
 Agenda de Trabalho
-Integrantes Locais:
+Integrantes Locais :
 Matheus da Silva da Cruz
 David J. A. Silva
 Índice
@@ -16,7 +16,7 @@ Criar
 Editar
 Excluir
 Visualizar tarefas
-O objetivo é fornecer uma ferramenta simples e eficiente para organização e acompanhamento de atividades diárias . O sistema conta com uma interface gráfica para gerenciamento de usuários e clientes , utilizando MySQL para armazenamento de dados.
+O objetivo é fornecer uma ferramenta simples e eficiente para a organização e acompanhamento de atividades diárias . O sistema conta com uma interface gráfica para o gerenciamento de usuários e clientes , utilizando MySQL para o armazenamento de dados.
 
 Tecnologias Utilizadas
 Linguagem : Java
@@ -26,26 +26,21 @@ Ferramenta de gerenciamento : MySQL Workbench
 Conexão com o Banco de Dados : JDBC
 Funcionalidades Implementadas
 Tela de Login
-
 Autenticação com nome de usuário e senha.
 Exibe erro se as credenciais forem incorretas.
 Tela Principal
-
-Menu com opções: Cadastro de Usuários, Cadastro de Clientes e Agenda.
+Menu com opções: Cadastro de Usuários , Cadastro de Clientes e Agenda .
 Tela de Cadastro de Usuários
-
-Campos: nome, e-mail, nome de usuário e senha.
-Funcionalidades: pesquisa, adição, edição e exclusão de usuários, com validações para evitar duplicações.
+Campos : nome, e-mail, nome de usuário e senha.
+Funcionalidades: pesquisa , adição , edição e exclusão de usuários , com validações para evitar duplicações.
 Tela de Cadastro de Clientes
-
-Campos: nome, endereço, telefone, e-mail e CPF/CNPJ.
-Funcionalidades: gerenciamento de clientes.
+Campos : nome, endereço, telefone, e-mail e CPF/CNPJ.
+Funcionalidades: gerenciamento de clientes .
 Agenda para Registro de Compromissos
-
-Campos: dados, hora, descrição e cliente associado.
-Exibe compromissos em tabela com visualização por dia, semana ou mês.
+Campos : dados, hora, descrição e cliente associado.
+Exibe compromissos em tabela com visualização por dia , semana ou mês .
 Estrutura do Banco de Dados
-Tabelas:
+Tabelas :
 Usuários : id, nome, email, nome_usuario, senha
 Clientes : id, nome, endereço, telefone, email, cpf_cnpj
 Ordem do Dia : id, data, hora, descrição, cliente_id (chave estrangeira)
