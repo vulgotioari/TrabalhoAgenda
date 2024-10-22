@@ -1,8 +1,13 @@
 Agenda de Trabalho
+
 Integrantes Locais:
+
 Matheus da Silva da Cruz
+
 David J. A. Silva
+
 Índice
+
 Descrição do Projeto
 Tecnologias Utilizadas
 Funcionalidades Implementadas
