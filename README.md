@@ -2,7 +2,7 @@ Agenda de Trabalho
 
 Integrantes Locais:
 
-Matheus da Silva da Cruz
+Matheus da Silva da Cruz;
 David J. A. Silva
 
 Índice
