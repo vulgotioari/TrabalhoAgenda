@@ -1,14 +1,25 @@
 Agenda de Trabalho
+
 Integrantes Locais :
+
 Matheus da Silva da Cruz
+
 David J. A. Silva
+
 Índice
+
 Descrição do Projeto
+
 Tecnologias Utilizadas
+
 Funcionalidades Implementadas
+
 Estrutura do Banco de Dados
+
 Contatos
+
 Descrição do Projeto
+
 Este projeto é um sistema de gerenciamento de tarefas que permite aos usuários:
 
 Pesquisar
