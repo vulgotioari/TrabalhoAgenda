@@ -7,7 +7,7 @@ CREATE TABLE usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
-    nome_usuario VARCHAR(50) NOT NULL UNIQUE,
+    usuario VARCHAR(50) NOT NULL UNIQUE,
     senha VARCHAR(255) NOT NULL
 );
 
@@ -43,3 +43,22 @@ SELECT * FROM usuarios;
 
 -- Selecionar todos os registros da tabela clientes
 SELECT * FROM clientes;
+
+select * from usuarios where nome_usuario = 'Matheus' and senha = 123456;
+
+alter table usuarios drop column nome_usuario;
+alter table  usuarios add column usuario VARCHAR(50) NOT NULL UNIQUE;
+INSERT INTO usuarios (usuario)
+VALUES ('Matheus');
+
+
+
+update usuarios set usuario = ('matheus');
+
+INSERT INTO usuarios (nome, email, usuario, senha)
+VALUES ('Matheus Cruz', 'motogmatheus362@gmail.com', 'Matheus', '123456');
+
+UPDATE nome_da_tabela
+SET usuario = usuario + 'matheus';
+INSERT INTO usuarios (nome, email, usuario, senha)
+VALUES ('Matheus Cruz', 'motogmatheus362@gmail.com', 'Matheus', '123456');
