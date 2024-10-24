@@ -1,0 +1,45 @@
+-- Criar o banco de dados
+CREATE DATABASE TelaAgenda;
+USE TelaAgenda;
+
+-- Criar tabela de usuários
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    nome_usuario VARCHAR(50) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL
+);
+
+-- Criar tabela de clientes
+CREATE TABLE clientes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    endereco VARCHAR(255) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    cpf_cnpj VARCHAR(20) NOT NULL UNIQUE
+);
+
+-- Criar tabela de agendamentos
+CREATE TABLE agendas (
+    idAgendamento INT AUTO_INCREMENT PRIMARY KEY,
+    nomeCliente VARCHAR(100) NOT NULL,
+    conteudo VARCHAR(255) NOT NULL,
+    datas DATE NOT NULL,
+    hora TIME NOT NULL
+);
+
+-- Inserir dados na tabela de usuários
+INSERT INTO usuarios (nome, email, nome_usuario, senha)
+VALUES ('Matheus Cruz', 'motogmatheus362@gmail.com', 'Matheus', '123456');
+
+-- Inserir dados na tabela de clientes
+INSERT INTO clientes (nome, endereco, telefone, email, cpf_cnpj)
+VALUES ('David', 'Rua Vargas, 123', '996874870', 'davidsx999@gmail.com', '704.363.300-16');
+
+-- Selecionar todos os registros da tabela usuários
+SELECT * FROM usuarios;
+
+-- Selecionar todos os registros da tabela clientes
+SELECT * FROM clientes;
