@@ -16,7 +16,7 @@ public class usuarioDAO {
     
     // Método para incluir um novo usuário no banco de dados
     public void IncluirUsuario(usuarioDTO udto) {
-        String sql = "insert into usuarios(id, nome, email, nome_usuario, senha) values(?,?,?,?,?)"; // SQL de inserção
+        String sql = "insert into usuarios(id, nome, email, usuario, senha) values(?,?,?,?,?)"; // SQL de inserção
         
         conexao = new conexaoDAO().conector(); // Estabelece a conexão
         
@@ -43,7 +43,7 @@ public class usuarioDAO {
     
     // Método para realizar o login do usuário
     public void logar(usuarioDTO udto) {
-        String sql = "select * from usuarios where nome_usuario = ? and senha = ?"; // SQL de login
+        String sql = "select * from usuarios where usuario = ? and senha = ?"; // SQL de login
         conexao = new conexaoDAO().conector(); // Estabelece a conexão
         
         try {
@@ -61,7 +61,7 @@ public class usuarioDAO {
                 JOptionPane.showMessageDialog(null, "Usuário e/ou senha inválidos!!!"); // Mensagem de erro
             }
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Tela de login" + e); // Mensagem de erro
+            JOptionPane.showMessageDialog(null, "metodo logar" + e); // Mensagem de erro
         }
     }
     

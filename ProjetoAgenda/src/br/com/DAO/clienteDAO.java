@@ -2,8 +2,10 @@ package br.com.DAO;
 
 import br.com.DTO.agendaDTO; 
 import br.com.DTO.clienteDTO;
+import br.com.DTO.usuarioDTO;
 import br.com.View.telaAgenda; 
 import static br.com.View.telaAgenda.tabelaAgenda; 
+import br.com.View.telaPrincipal;
 import java.sql.Connection; 
 import java.sql.PreparedStatement; 
 import java.sql.ResultSet; 
@@ -43,6 +45,36 @@ public class clienteDAO {
             JOptionPane.showMessageDialog(null, "Erro ao inserir agendamento: " + e); // Mensagem de erro
         }
     }
+    
+    
+    public void logar (usuarioDTO udto){
+        String sql = "select *from usuario where usuario = ? and senha =?";
+        conexao = new conexaoDAO().conector();
+        
+        try {
+            //preparar a consulta no banco de dados, em funçao do que foi inserido nas caixas de texto
+            pst = conexao.prepareStatement(sql);
+            pst.setString(1, udto.getLoginUsuario());
+             pst.setString(2, udto.getSenhaUsuario());
+             
+             //executar query
+             rs = pst.executeQuery();
+             if(rs.next()){
+                 telaPrincipal principal = new telaPrincipal();
+                 principal.setVisible(true);//mudamos a visu da tela
+                 
+             }else{
+                 JOptionPane.showMessageDialog(null,"Usuario e ou senha incorretos" );
+        }
+        
+            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "tela de login " + e);
+        }
+        
+    }
+    
+    
 
     public void pesquisar(agendaDTO adto) { // Método para pesquisar um agendamento
         String sql = "SELECT * FROM agendas WHERE idAgendamento = ?"; // SQL para seleção

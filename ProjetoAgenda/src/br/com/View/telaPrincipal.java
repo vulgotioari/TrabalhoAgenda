@@ -204,7 +204,7 @@ public class telaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_formWindowActivated
 
     private void subMenuSobreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subMenuSobreActionPerformed
-        JOptionPane.showMessageDialog(null, "Este projeto é um sistema de gerenciamento de tarefas que permite aos usuários pesquisar,\n criar, editar, excluir e visualizar suas tarefas. O objetivo é fornecer uma ferramenta intuitiva e eficiente\n para organizar e acompanhar atividades diárias com interface gráfica para gerenciamento de usuários e clientes.");
+        JOptionPane.showMessageDialog(null, "Este projeto é uma plataforma de administração de atividades, onde os usuários podem buscar, adicionar, modificar, remover e visualizar suas tarefas. O propósito é oferecer uma solução prática e fácil de usar para organizar e monitorar as ações do dia a dia, com uma interface gráfica voltada para o gerenciamento de usuários e clientes.");
     }//GEN-LAST:event_subMenuSobreActionPerformed
 
     private void SubMenuAgendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubMenuAgendaActionPerformed

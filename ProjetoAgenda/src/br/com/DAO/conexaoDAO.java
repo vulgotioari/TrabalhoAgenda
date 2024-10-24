@@ -18,7 +18,7 @@ public class conexaoDAO {
     java.sql.Connection conexao = null; // Objeto de conexão com o banco de dados
     
     // URL, usuário e senha para conexão ao banco de dados
-    String url = "jdbc:mysql://localhost:3306/TelaAgenda";
+    String url = "jdbc:mysql://localhost:3306/telaagenda";
 String usuario = "root"; // ou outro usuário, se necessário
 String senha = "root"; // verifique a senha
 
@@ -35,7 +35,7 @@ String senha = "root"; // verifique a senha
         String driver = "com.mysql.jdbc.Driver";
 
         // URL, usuário e senha para conexão ao banco de dados
-        String url = "jdbc:mysql://localhost:3306/projetoagenda";
+        String url = "jdbc:mysql://localhost:3306/telaagenda";
         String user = "root";
         String password = "root";
 

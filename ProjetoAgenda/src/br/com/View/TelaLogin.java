@@ -5,7 +5,11 @@
  */
 package br.com.View;
 
+import br.com.DAO.clienteDAO;
 import br.com.DAO.conexaoDAO;
+import br.com.DAO.usuarioDAO;
+import br.com.DTO.clienteDTO;
+import br.com.DTO.usuarioDTO;
 import java.sql.*;
 import javax.swing.JOptionPane;
 
@@ -101,6 +105,11 @@ public class TelaLogin extends javax.swing.JFrame {
         jLabel4.setText("jLabel4");
 
         btnLogar.setText("Logar");
+        btnLogar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLogarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -154,6 +163,20 @@ public class TelaLogin extends javax.swing.JFrame {
     private void txtSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSenhaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtSenhaActionPerformed
+
+    private void btnLogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogarActionPerformed
+        // TODO add your handling code here:
+        String txtlogin = txtUsuario.getText();
+        String txtsenha = txtSenha.getText();
+        
+        usuarioDTO udto = new usuarioDTO();
+        
+         udto.setLoginUsuario(txtlogin);
+        udto.setSenhaUsuario(txtsenha);
+       
+        usuarioDAO cdao = new usuarioDAO();
+        cdao.logar(udto);
+    }//GEN-LAST:event_btnLogarActionPerformed
 
     /**
      * @param args the command line arguments
